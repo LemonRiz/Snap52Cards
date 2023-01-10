@@ -4,8 +4,9 @@ public class Main {
     public static void main(String[] args) {
         CardGame cardGame = new CardGame("Snap");
         cardGame.createDeck();
-        System.out.println(cardGame.getDeck());
-        cardGame.dealCard();
+        cardGame.sortCards(CardSorting.byValue);
+        cardGame.sortCards(CardSorting.bySuit);
+        cardGame.sortCards(CardSorting.shuffle);
 
     }
 }

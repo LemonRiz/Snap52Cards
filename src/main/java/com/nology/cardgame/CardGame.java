@@ -1,7 +1,7 @@
 package com.nology.cardgame;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collections;
 
 public class CardGame {
     // Stores and creates our deck of 52 cards
@@ -35,10 +35,23 @@ public class CardGame {
         return topCard;
     }
 
-    public ArrayList<Card> sortDeckInNumberOrder(){
+ public void sortCards(CardSorting cardSorting){
+        switch (cardSorting){
+            case byValue:
+                deckOfCards.sort(new SortDeckInNumOrder());
+                break;
+            case bySuit:
+                deckOfCards.sort(new SortDeckIntoSuits());
+                break;
+            case shuffle:
+                Collections.shuffle(deckOfCards);
+                break;
+        }
+        for (Card card : deckOfCards){
+            System.out.println(card);
+        }
+ }
 
 
-        return deckOfCards;
-    }
 
 }

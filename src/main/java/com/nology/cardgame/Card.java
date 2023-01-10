@@ -6,6 +6,13 @@ public class Card {
     private String symbol;
     private int value;
 
+    public String getSuit() {
+        return suit;
+    }
+
+    public int getValue() {
+        return value;
+    }
 
     public Card(String suit, String symbol, int value) {
         this.suit = suit;
