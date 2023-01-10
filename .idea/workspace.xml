@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c6afd24-4243-4490-a6e6-b5078002ec96" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/CardGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/CardSuits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Snap.java" afterDir="false" />
+    <list default="true" id="7c6afd24-4243-4490-a6e6-b5078002ec96" name="Changes" comment="Can now construct deck">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/SortDeckIntoSuits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/sortDeckInNumOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/CardGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Snap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,6 +61,14 @@
       <option name="presentableId" value="Default" />
       <updated>1673360585543</updated>
     </task>
+    <task id="LOCAL-00001" summary="Can now construct deck">
+      <created>1673368363292</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673368363292</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -75,5 +81,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Can now construct deck" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can now construct deck" />
   </component>
 </project>

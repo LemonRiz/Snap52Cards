@@ -29,6 +29,16 @@ public class CardGame {
         return deckOfCards;
     }
 
+    public Card dealCard(){
+        Card topCard = deckOfCards.get(deckOfCards.size()-1);
+        deckOfCards.remove(deckOfCards.size()-1);
+        return topCard;
+    }
 
+    public ArrayList<Card> sortDeckInNumberOrder(){
+
+
+        return deckOfCards;
+    }
 
 }
