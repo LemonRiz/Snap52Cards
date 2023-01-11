@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c6afd24-4243-4490-a6e6-b5078002ec96" name="Changes" comment="Stage 2 complete - all sorts and shuffles available">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Commands.java" afterDir="false" />
+    <list default="true" id="7c6afd24-4243-4490-a6e6-b5078002ec96" name="Changes" comment="Stage 3 complete! Can win a game of snap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/CardGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Commands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/cardgame/Snap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673373216077</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Stage 3 complete! Can win a game of snap">
+      <created>1673452506160</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673452506160</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,6 +104,7 @@
     <MESSAGE value="Can now construct deck" />
     <MESSAGE value="Stage 1 finished" />
     <MESSAGE value="Stage 2 complete - all sorts and shuffles available" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stage 2 complete - all sorts and shuffles available" />
+    <MESSAGE value="Stage 3 complete! Can win a game of snap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stage 3 complete! Can win a game of snap" />
   </component>
 </project>

@@ -14,7 +14,7 @@ public class Card {
         return value;
     }
 
-    public String getSymbol(){
+    public String getSymbol() {
         return symbol;
     }
 
@@ -28,7 +28,7 @@ public class Card {
     public String toString() {
         return "[" +
                 suit +
-                symbol +
+                symbol + "(" + value + ")" +
                 ']';
     }
 }

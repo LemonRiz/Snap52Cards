@@ -14,18 +14,19 @@ public class Snap extends CardGame {
         sortCards(CardSorting.shuffle);
         System.out.println("Press Enter to start game");
         commands.getUserInput();
-        Card currentCard = dealCard();
-        while(!snapped){
+        Card card1 = dealCard();
+        while (!snapped) {
             System.out.println("Press enter to deal another card.");
             commands.getUserInput();
-            Card card1 = dealCard();
-            if(card1.getSymbol().equals(currentCard.getSymbol())){
+            Card card2 = dealCard();
+            if (card2.getSymbol().equals(card1.getSymbol())) {
+                commands.snapWin();
                 snapped = true;
-                System.out.println(currentCard);
                 System.out.println(card1);
+                System.out.println(card2);
                 System.out.println("SNAP! You win!");
             } else {
-                currentCard = card1;
+                card1 = card2;
             }
 
         }
