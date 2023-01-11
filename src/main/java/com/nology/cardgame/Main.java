@@ -1,12 +1,21 @@
 package com.nology.cardgame;
 
+
 public class Main {
     public static void main(String[] args) {
+
         CardGame cardGame = new CardGame("Snap");
+        Snap snap = new Snap("snap");
+
         cardGame.createDeck();
-        cardGame.sortCards(CardSorting.byValue);
         cardGame.sortCards(CardSorting.bySuit);
-        cardGame.sortCards(CardSorting.shuffle);
+        System.out.println(cardGame.getDeck());
+
+        System.out.println();
+        snap.snapStart();
+
 
     }
+
+
 }

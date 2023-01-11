@@ -14,6 +14,10 @@ public class Card {
         return value;
     }
 
+    public String getSymbol(){
+        return symbol;
+    }
+
     public Card(String suit, String symbol, int value) {
         this.suit = suit;
         this.symbol = symbol;
