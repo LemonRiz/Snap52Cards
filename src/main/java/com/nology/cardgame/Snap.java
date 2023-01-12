@@ -12,7 +12,7 @@ public class Snap extends CardGame {
     public void snapStart() {
         createDeck();
         sortCards(CardSorting.shuffle);
-        System.out.println("Press Enter to start game");
+        System.out.println("Press Enter to deal your first card and start the game.");
         commands.getUserInput();
         Card card1 = dealCard();
         while (!snapped) {
@@ -20,6 +20,7 @@ public class Snap extends CardGame {
             commands.getUserInput();
             Card card2 = dealCard();
             if (card2.getSymbol().equals(card1.getSymbol())) {
+                System.out.println("Press enter to deal another card.");
                 commands.snapWin();
                 snapped = true;
                 System.out.println(card1);
