@@ -8,7 +8,6 @@ public class Commands {
     Scanner userInput = new Scanner(System.in);
 
 
-
     public String getUserInput() {
         String input = "";
         boolean loop = true;
@@ -32,14 +31,15 @@ public class Commands {
     public String snapWin() {
         String input = "";
         boolean snapLoop = false;
+        boolean winner = false;
         while (!snapLoop) {
             input = userInput.nextLine().toLowerCase();
-            if (input.isEmpty()) {
-                System.out.println("You should have typed 'Snap' to win!");
+            if (input.equals("snap")) {
+                snapLoop = true;
+            } else if (!input.isEmpty()) {
+                System.out.println("You should have typed 'snap' to win!");
             } else {
-                if (input.equals("snap")) {
-                    snapLoop = true;
-                }
+                System.out.println("You missed a snap!");
             }
         }
         return input;
