@@ -9,13 +9,15 @@ public class Snap extends CardGame {
     private boolean snapped = false;
     Commands commands = new Commands();
 
-    private String SnapWin() {
+//    boolean player1 = true;
+//    boolean player2 = false;
+
+    private void doubleCheck() {
         if (commands.snapWin().equals("snap")) {
             snapped = true;
         } else {
             snapped = false;
         }
-        return null;
     }
 
     public void snapStart() {
@@ -30,15 +32,18 @@ public class Snap extends CardGame {
             Card card2 = dealCard();
             if (card2.getSymbol().equals(card1.getSymbol())) {
                 System.out.println("Press enter to deal another card.");
-                SnapWin();
-                System.out.println(card1);
-                System.out.println(card2);
-                System.out.println("SNAP! You win!");
+                doubleCheck();
+                if (snapped) {
+                    System.out.println(card1);
+                    System.out.println(card2);
+                    System.out.println("SNAP! You win!");
+                }
             } else {
                 card1 = card2;
             }
 
         }
     }
+
 
 }

@@ -31,15 +31,16 @@ public class Commands {
     public String snapWin() {
         String input = "";
         boolean snapLoop = false;
-        boolean winner = false;
         while (!snapLoop) {
             input = userInput.nextLine().toLowerCase();
             if (input.equals("snap")) {
                 snapLoop = true;
             } else if (!input.isEmpty()) {
                 System.out.println("You should have typed 'snap' to win!");
+                return input;
             } else {
                 System.out.println("You missed a snap!");
+                return input;
             }
         }
         return input;
