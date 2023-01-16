@@ -47,15 +47,11 @@ public class Commands {
     }
 
 
-    public String playAgain(){
+    public String playAgain() {
         String input = "";
-        boolean restart = false;
         input = userInput.nextLine().toLowerCase();
-        while (!restart){
-        if (input.equals("y")){
-                restart = true;
-            return "Y";
-            }
+        if (input.equals("y")) {
+            return "y";
         }
         return input;
     }

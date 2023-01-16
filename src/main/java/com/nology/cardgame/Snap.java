@@ -6,7 +6,7 @@ public class Snap extends CardGame {
         super("Snap");
     }
 
-    private boolean snapped = false;
+    boolean snapped = false;
     Commands commands = new Commands();
 
 //    boolean player1 = true;
@@ -20,15 +20,19 @@ public class Snap extends CardGame {
         }
     }
 
-    private void restartGame(){
-        if (commands.playAgain().equals("y")){
+    private void restartGame() {
+        if (commands.playAgain().equals("y")) {
+            System.out.println("Restarting...");
             snapStart();
+        } else {
+            snapped = true;
         }
     }
 
     public void snapStart() {
+        snapped = false;
         createDeck();
-        sortCards(CardSorting.shuffle);
+        sortCards(CardSorting.byValue);
         System.out.println("Press Enter to deal your first card and start the game.");
         commands.getUserInput();
         Card card1 = dealCard();
