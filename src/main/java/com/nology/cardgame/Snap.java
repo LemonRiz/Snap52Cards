@@ -20,6 +20,12 @@ public class Snap extends CardGame {
         }
     }
 
+    private void restartGame(){
+        if (commands.playAgain().equals("y")){
+            snapStart();
+        }
+    }
+
     public void snapStart() {
         createDeck();
         sortCards(CardSorting.shuffle);
@@ -37,6 +43,8 @@ public class Snap extends CardGame {
                     System.out.println(card1);
                     System.out.println(card2);
                     System.out.println("SNAP! You win!");
+                    System.out.println("Play again? Y/N");
+                    restartGame();
                 }
             } else {
                 card1 = card2;
