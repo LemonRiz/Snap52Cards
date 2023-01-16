@@ -32,7 +32,7 @@ public class Snap extends CardGame {
     public void snapStart() {
         snapped = false;
         createDeck();
-        sortCards(CardSorting.byValue);
+        sortCards(CardSorting.shuffle);
         System.out.println("Press Enter to deal your first card and start the game.");
         commands.getUserInput();
         Card card1 = dealCard();
